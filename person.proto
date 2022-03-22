@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+message Person {
+  string name = 1;
+  int32 id = 2;
+  bool married = 3;
+}
+// The request message containing the user's name.
+message RequestInforPerson {
+  string name = 1;
+}
+// The request message containing the user's name.
+message RequestCheckMaritalStatus {
+  string name = 1;
+}
+// The response message containing the information of person with name from input
+message RespondGetMaritalStatus {
+  bool married = 1;
+}
+service AsillaService {
+    rpc getInfor (RequestInforPerson) returns (Person) {}
+    rpc checkMarried (RequestCheckMaritalStatus) returns (RespondGetMaritalStatus) {}
+}

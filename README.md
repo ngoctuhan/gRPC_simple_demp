@@ -237,7 +237,7 @@ When implement about gRPC has exist some issues
 
 
 ## License
-MIT
+
 
 **Asilla VietNam**
 

@@ -82,7 +82,7 @@ message RespondGetMaritalStatus {
 }
 service AsillaService {
     rpc getInfor (RequestInforPerson) returns (Person) {}
-    rpc SayHelloAgain (RequestCheckMaritalStatus) returns (RespondGetMaritalStatus) {}
+    rpc checkMarried (RequestCheckMaritalStatus) returns (RespondGetMaritalStatus) {}
 }
 ```
 A above example define a service with 2 functions:

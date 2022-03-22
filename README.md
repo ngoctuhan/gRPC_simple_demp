@@ -225,6 +225,17 @@ python3 client.py --ip 127.0.0.1 --port 50051
 ```
 IP and Port depend define of serice. In a above example, we run in localhost.  
 
+
+## Issues 
+
+When implement about gRPC has exist some issues
+
+- Install wrong libraries: Can you installed grpc, Correct library is grpcio 
+- Meet a exception look like: "Exception calling application: No positional arguments allowed","grpc_status":2}". Check paramters name and type data.
+- If you have see log: details = "failed to connect to all addresses". Check port is runing and port is called from client is one. 
+- If gRPC server is deloyed in a server. If you can not connect, pls check public IP and port is ready for call from out network. 
+
+
 ## License
 MIT
 
